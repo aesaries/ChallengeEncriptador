@@ -70,7 +70,7 @@ main{
     border-radius: 15px;
     height: 32rem;
     font-size: larger;
-    background-image: url("/img/Muneco.png");
+    background-image: url("img/Muneco.png");
     background-position: center center;
     background-repeat: no-repeat;
 
