@@ -74,7 +74,7 @@ function desencriptar() {
 
     document.getElementById("btnEncriptar").disabled = false;
     document.getElementById("btnDesencriptar").disabled = true;
-    document.getElementById("btnCopiar").disabled = false;
+    document.getElementById("btnCopiar").disabled = true;
 
     document.getElementById("entrada").readOnly = false;
 
