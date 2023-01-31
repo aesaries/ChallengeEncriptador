@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    
+    <main>
+        <img class="logo" src="img/Logo.png" alt="Logo de Alura">
+        <p class="copyright">by Enzo Valverde</p>
+        <div class="ingreso">
+            <textarea name="entrada" id="entrada" cols="30" rows="10" placeholder="Ingrese el texto aqui" value=""></textarea>
+            <div class="detalle">
+                <img src="img/Vector2.png" width="15" alt="signo de admiracion">
+                  
+                <p class="reglamento">Solo letras minisculas y sin acentos</p>
+            </div>
+            <div class="botonera">
+                <button class="botones" onclick="encriptar()" id="btnEncriptar">Encriptar</button>
+                <button class="botones2" onclick="desencriptar()" id ="btnDesencriptar" disabled>Desencriptar</button> 
+            </div>        
+         
+        </div>
+        <div class="resultado">
+
+            <textarea name="salida" id="salida" cols="30" rows="10" readonly></textarea>
+            <p class="mensaje">Ningun mensaje fue <br> encontrado <br></p>
+            <p class="mensaje2">Ingresa el texto que quieres Encriptar o <br> descencriptar</p>
+            <button class="botones2 btnfloat" id = "btnCopiar" onclick="copiarPortapapeles()" disabled>Copiar</button>
+
+        </div>
+
+
+    </main>
+    
+    <script src="/js/jscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+
+
+
+body{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    margin:  auto;
+    place-content: center;
+    background-color: beige;
+    
+}
+
+
+main{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    position: absolute;
+    left: 9rem;
+    top:1rem;
+    height: 2rem;
+    
+}
+.copyright{
+    position: absolute;
+    left: 11rem;
+    top:1rem;
+    height: 2rem;
+}
+
+.ingreso{
+    display: flex;
+    flex-direction: column;
+}
+
+#entrada{
+    resize: none;
+    border-radius: 15px;
+    height: 26rem;
+    width: 32rem;
+    margin-right: 5rem;
+    font-size: larger;
+    background-color: beige;
+    border: none;
+}
+
+.botonera{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+::placeholder{
+    color: blue;
+    font-weight: bolder;
+}
+
+.resultado{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#salida{
+    resize: none;
+    border-radius: 15px;
+    height: 32rem;
+    font-size: larger;
+    background-image: url(/img/Muneco.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+
+
+}
+
+.mensaje{
+    text-align: center;
+    position: relative;
+    top: -9rem;
+    font-weight: bolder;
+}
+
+.mensaje2{
+    text-align: center;
+    position: relative;
+   border-right: 1rem; 
+    top: -8rem; 
+    
+}
+
+
+.detalle{
+    display: flex;
+    margin: 0.5rem;
+}
+
+.reglamento{
+    margin-left: 0.5rem;
+}
+
+.botones{
+    background-color: #0A3871;
+    border-radius: 15px;
+    color: azure;
+    padding: 1rem;
+    width: 10rem;
+    font-weight: bold;
+   
+}
+.botones2{
+    background-color: beige;
+    border: 1px solid #0A3871;
+    border-radius: 15px;
+    color: blue;
+    padding: 1rem;
+    width: 10rem;
+    font-weight: bold;
+    
+
+}
+
+#btnCopiar{
+    position: relative;
+    left: 4rem;
+    bottom: 4rem;
+    display: none;
+    
+}
+
+.salida .botones2{
+    margin: 2rem;
+}
+
+
+
+
+
+/*media queries */
+
+@media only screen and (min-width: 540px) and (max-width: 940px) {
+
+    body{
+        justify-content: center;
+    }
+    
+    main{
+        
+        flex-direction:column;
+        align-items: center;
+        
+        
+    }
+
+    .logo{
+        left: 15rem;
+    }
+    .copyright{
+        left: 17rem;
+    }
+    .resultado{
+        width: max-content;
+    }
+    #entrada{
+        height: 20rem;
+        width: 21rem;
+        margin-right: 0rem;
+    }
+    #salida{
+        background-image: none;
+        height: 10rem;
+        width: 20rem;
+        margin-top: 1rem;
+
+    }
+    .mensaje{
+        position: relative;
+        bottom: -10rem;
+
+    }
+    .mensaje2{
+        position: relative;
+        bottom: -9rem;
+    }
+    #btnCopiar{
+        position: relative;
+        left: 1rem;
+        bottom: 0rem;
+        margin-top: 1rem;
+        width: 90%;
+        display: none;
+        
+    }
+  }
+
+  @media only screen and (min-width: 240px) and (max-width: 540px){
+
+    
+    
+    main{
+        
+        flex-direction:column;
+        align-items: center;
+        margin-left: 1rem;
+        
+    }
+
+    #entrada{
+        height: 15rem;
+        width: auto;
+        margin-right: 0rem;
+    }
+
+    .botonera{
+        flex-direction: column;
+        width: auto;
+    }
+    .botones{
+        width: auto;
+    }
+    .botones2{
+        width: auto;
+    }
+        
+    
+    #salida{
+        background-image: none;
+        height: 10rem;
+        width: auto;
+        margin-top: 1rem;
+
+    }
+
+    #btnCopiar{
+        position: relative;
+        left: 1rem;
+        bottom: 0rem;
+        margin-top: 1rem;
+        width: 90%;
+        display: none;
+        
+    }
+
+
+  }
